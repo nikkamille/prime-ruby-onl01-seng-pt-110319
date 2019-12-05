@@ -5,9 +5,10 @@ def prime?(number)
   n.each do |num| 
     num % 2
     if num == 0 
-      return true 
+      return false
     else
-      return false  
+      num != 0 
+      return true 
     end
   end
 end
