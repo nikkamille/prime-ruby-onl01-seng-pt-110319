@@ -1,4 +1,4 @@
 # Add  code here!
 
 def prime?(number)
-  n = [1..1000000]
+  n = [1..10000]
