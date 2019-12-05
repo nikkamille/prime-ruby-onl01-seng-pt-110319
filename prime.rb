@@ -1,14 +1,11 @@
 # Add  code here!
 
 def prime?(number)
-  n = [-1..110000]
-  n.each do |num| 
-    num % 2
-    if num < 0 or num == 0 or num == 1
-      return false
-    else
-      num != 0 
-      return true 
+  if number < 0 or number == 0 or number == 1
+    return false
+  else
+    (2..number-1).to_a.all? do |factor|
+      num % factor != 0
     end
   end
 end
